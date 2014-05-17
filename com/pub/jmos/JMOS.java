@@ -108,6 +108,10 @@ public class JMOS
             try
             {
                 Socket client = server.accept();
+                
+                if(debugging)
+                    System.out.println("New connection received from: " + client.getInetAddress().toString() + ":" + client.getPort());
+                    
                 if(!properties.incrementNumClients())
                 {
                     client.close();
