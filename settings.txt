@@ -1,0 +1,7 @@
+# This is the settings file for JMOS server
+# Have faith, its configured to sensible values, change only if you know what you are doing.
+Protocol=http        # Its only http for now
+Port=80
+DocRoot=c:/webroot
+UseFirewall=false    # Its ignored for now, until JMOF is writtten
+404MessageFile=httpmessages/404.htm

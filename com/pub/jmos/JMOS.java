@@ -60,6 +60,7 @@ public class JMOS
                 for(String key : settings.keySet())
                     System.out.println(key + " = " + settings.get(key));
             }
+            fis.close();
         }
         catch(FileNotFoundException e)
         {
@@ -131,4 +132,7 @@ public class JMOS
             }
         }
     }
+    
+    static String version = "JMOS / 0.0.1";
+    static String []defExtension = {"htm", "html", "php"};
 }
